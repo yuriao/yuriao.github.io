@@ -1,271 +1,120 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Lujia Chen's website</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-<link rel='stylesheet' type='text/css' href='css/style.css' />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Lujia Chen's website</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
-<!--p id='demo2' width=1670 height=780 style="position: absolute; left: 0; top: 0; z-index: 2; color:white;"-->
+	<!--================Header Menu Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container box_1620">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav ml-auto">
+							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+							<!--li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
+							<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li> 
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+									<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
+								</ul>
+							</li> 
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+									<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+								</ul>
+							</li> 
+							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li-->
+						</ul>
+					</div> 
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================Header Menu Area =================-->
 
-<!-- in CSS the width and height is just the visual size while outside CSS is actual pixels -->
-<!--img id="star" width="2" height="2" src="texture/star.png" alt="star"-->
+	<!--================Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="container box_1300">
+			<div class="banner_inner d-flex align-items-center">
+			 <div class="banner_content">
+				 <div class="media">
+					 <div class="d-flex">
+						 <img src="img/personal.png" alt="">
+					 </div>
+					 <div class="media-body">
+						 <div class="personal_text">
+							 <h6>Hello Everybody, i am</h6>
+							 <h3>Lujia Chen</h3>
+							 <h4>Biomedical Engineering, data science, software</h4>
+							 <p></p>
+							 <ul class="list basic_info">
+								 <li><a href="#"><i class="lnr lnr-calendar-full"></i> UC Irvine</a></li>
+								 <li><a href="#"><i class="lnr lnr-phone-handset"></i> 9497715927</a></li>
+								 <li><a href="#"><i class="lnr lnr-envelope"></i> lujiac1@uci.edu</a></li>
+								 <li><a href="#"><i class="lnr lnr-home"></i> 2109 Palo Verde Rd, Irvine, CA 92617</a></li>
+							 </ul>
+							 <ul class="list personal_social">
+								 <li><a href="https://www.linkedin.com/in/lujiachen-158298a1/" class="fa fa-linkedin"></a></li>
+							 </ul>
+						 </div>
+					 	</div>
+				 	</div>
+			 	</div>
+		 	</div>
+	 	</div>
+	</section>
+	<!--================End Home Banner Area =================-->
 
-<canvas id="myCanvas" style="position: absolute; left: 0; top: 0; z-index: 0;">
-</canvas>
-<canvas id="myCanvas2" style="position: absolute; left: 0; top: 0; z-index: 1;">
-</canvas>
-<canvas id="myCanvas3" style="position: absolute; left: 0; top: 0; z-index: 2;">
-</canvas>
+	<!--================Background =================-->
+	<canvas id="myCanvas" style="position: absolute; left: 0; top: 0; z-index: 0;">
+	</canvas>
+	<canvas id="myCanvas2" style="position: absolute; left: 0; top: 0; z-index: 1;">
+	</canvas>
+	<canvas id="myCanvas3" style="position: absolute; left: 0; top: 0; z-index: 2;">
+	</canvas>
+	<!--================Background =================-->
 
-<div1 class="container">
-  <p id='word' class="col-md-12 mainTitle vertical-center">
-    Welcome to Lujia Chen's website
-  </p> 
-  <p id='time' class="col-md-12 subTitle vertical-center">
-  </p>
-</div1>
+	<!--<div3 class="sansserif" id='banner01' width=250 height=250 style="position: absolute; left:30px; top:25px; z-index: 5; color:rgb(250,250,250);">
+	<img src="texture/home.fw.png" />
+	</div3>
+	<div4 class="sansserif" id='banner02' width=250 height=250 style="position: absolute; left:120px; top:25px; z-index: 5; color:rgb(250,250,250);">
+	<img src="texture/work.fw.png" />
+	</div4>
+	<div5 class="sansserif" id='banner02' width=250 height=250 style="position: absolute; left:210px; top:25px; z-index: 5; color:rgb(250,250,250);">
+	<img src="texture/info.fw.png" />
+	</div5>-->
+	<script type="text/javascript" src="js/bg_drawing.js">
+	//cxt.fillStyle='blue';
+	//cxt.fillRect(0,0,150,75);
 
-<!--<div3 class="sansserif" id='banner01' width=250 height=250 style="position: absolute; left:30px; top:25px; z-index: 5; color:rgb(250,250,250);">
-<img src="texture/home.fw.png" />
-</div3>
-<div4 class="sansserif" id='banner02' width=250 height=250 style="position: absolute; left:120px; top:25px; z-index: 5; color:rgb(250,250,250);">
-<img src="texture/work.fw.png" />
-</div4>
-<div5 class="sansserif" id='banner02' width=250 height=250 style="position: absolute; left:210px; top:25px; z-index: 5; color:rgb(250,250,250);">
-<img src="texture/info.fw.png" />
-</div5>-->
-<script type="text/javascript">
-//cxt.fillStyle='blue';
-//cxt.fillRect(0,0,150,75);
 
-function drawsky()
-{
-	var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-    var hh = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight; 
-
-	var today = new Date();
-	var h = today.getHours();
-	var m = today.getMinutes();
-	var s = today.getSeconds();
-	
-	var currentsec=h*3600+m*60+s;  
-	
-	var r1map=[5,0,20,88,88,88,88,20,5];
-	var g1map=[7,0,30,114,114,114,114,30,7];
-	var b1map=[21,0,83,152,152,152,152,83,21];
-	var r2map=[35,0,110,224,118,118,224,100,15];
-	var g2map=[47,0,135,192,144,144,192,125,27];
-	var b2map=[80,0,199,143,182,182,143,119,50];
-	var tmap=[0,14400,18000,25200,36000,61200,72000,75600,86399];
-	
-	var index=1;
-	
-	if (currentsec>=0&&currentsec<=14400) //mid night
-	{
-		index=1;
-	}
-	if (currentsec>=14400&&currentsec<=18000)//before morning
-	{
-		index=2;
-	}
-	if (currentsec>=18000&&currentsec<=25200)
-	{
-		index=3;
-	}
-	if (currentsec>=25200&&currentsec<=36000)
-	{
-		index=4;
-	
-	}
-	if (currentsec>=36000&&currentsec<=61200)
-	{
-		index=5;	
-	}
-	if (currentsec>=61200&&currentsec<=72000)
-	{
-		index=6;
-	}
-	if (currentsec>=72000&&currentsec<=75600)
-	{
-		index=7;	
-	}
-	if (currentsec>=75600&&currentsec<=86399)
-	{
-		index=8;	
-	}
-	
-	var r1=Math.round((r1map[index]-r1map[index-1])/(tmap[index]-tmap[index-1])*(currentsec-tmap[index])+r1map[index]);
-	var g1=Math.round((g1map[index]-g1map[index-1])/(tmap[index]-tmap[index-1])*(currentsec-tmap[index])+g1map[index]);
-	var b1=Math.round((b1map[index]-b1map[index-1])/(tmap[index]-tmap[index-1])*(currentsec-tmap[index])+b1map[index]);
-	var r2=Math.round((r2map[index]-r2map[index-1])/(tmap[index]-tmap[index-1])*(currentsec-tmap[index])+r2map[index]);
-	var g2=Math.round((g2map[index]-g2map[index-1])/(tmap[index]-tmap[index-1])*(currentsec-tmap[index])+g2map[index]);
-	var b2=Math.round((b2map[index]-b2map[index-1])/(tmap[index]-tmap[index-1])*(currentsec-tmap[index])+b2map[index]);
-	document.body.style.background = "rgb(" + r1 + "," + g1 + "," + b1 + ")";
-	
-	var c = document.getElementById("myCanvas");
-	var ctx = c.getContext("2d");
-	ctx.canvas.width  = w;
-    ctx.canvas.height  = hh;
-	// Create gradient
-	var grd = ctx.createLinearGradient(0,0,0,c.height);
-	grd.addColorStop(0,"rgb(" + r1 + "," + g1 + "," + b1 + ")");
-	grd.addColorStop(1,"rgb(" + r2 + "," + g2 + "," + b2 + ")");
-	// Fill with gradient
-	ctx.fillStyle = grd;
-	ctx.fillRect(0,0,w,hh);
-//      document.getElementById('demo2').innerHTML = h;
-//		document.getElementById('demo2').innerHTML = "hiii";
-//		document.getElementById('demo2').innerHTML = "hiiii";   
-	var t = setTimeout(drawsky, 500);
-
-}
-
-function startTime() {
-    var today = new Date();
-	var y=today.getFullYear();
-	var n=today.getMonth()+1;
-	var d=today.getDate();
-    var h = today.getHours();
-    var m = today.getMinutes();
-
-    m = checkTime(m);
-    document.getElementById('time').innerHTML =
-    y+"-"+n+"-"+d+" "+h + ":" + m ;
-    var t = setTimeout(startTime, 1000);
-}
-
-function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-}
-
-function drawwords()
-{
-	var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-    var hh = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-	
-	var c = document.getElementById("word");
-
-	c.style.left=(w/2-500+200)+"px";
-	c.style.top=(hh/2-250+180)+"px";
-	
-	var c2 = document.getElementById("time");
-	c2.style.left=(w/2-450+360)+"px";
-	c2.style.top=(hh/2-205+200)+"px";
-}
-
-function drawstar()
-{
-		var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-    var hh = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight; 
-
-	var today = new Date();
-	var h = today.getHours();
-	var m = today.getMinutes();
-	var s = today.getSeconds();
-	
-	var currentsec=h*3600+m*60+s; 
-
-	var c2 = document.getElementById("myCanvas2");
-	var ctx2 = c2.getContext("2d");	
-	ctx2.canvas.width  = w;
-    ctx2.canvas.height  = hh;
-	
-	var imgs1=new Image();
-	imgs1.onload=function(){
-	    ctx2.drawImage(imgs1, 0, 0, w, hh);
-	} 
-	
-		if (currentsec>=0&&currentsec<=14400)
-	{
-	    imgs1.src="texture/star3.png";	
-	}
-	if (currentsec>=14400&&currentsec<=18000)
-	{
-	    imgs1.src="texture/star3.png";	
-	}
-	if (currentsec>=18000&&currentsec<=25200)
-	{
-	    imgs1.src="texture/star4.png";	
-	}
-	if (currentsec>=25200&&currentsec<=36000)
-	{
-		ctx2.clearRect(0, 0, c2.width,c2.height);	
-	}
-	if (currentsec>=36000&&currentsec<=61200)
-	{	
-		ctx2.clearRect(0, 0, c2.width,c2.height);
-	}
-	if (currentsec>=61200&&currentsec<=72000)
-	{
-	    imgs1.src="texture/star4.png";	
-	}
-	if (currentsec>=72000&&currentsec<=75600)
-	{	
-	    imgs1.src="texture/star4.png";
-	}
-	if (currentsec>=75600&&currentsec<=86399)
-	{
-	    imgs1.src="texture/star3.png";	
-	}
-	var t = setTimeout(drawstar, 60000);
-}
-
-function drawpic()
-{
-		var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-    var hh = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight; 
-
-	var today = new Date();
-	var h = today.getHours();
-	var m = today.getMinutes();
-	var s = today.getSeconds();
-	
-	var currentsec=h*3600+m*60+s; 
-
-	var c3 = document.getElementById("myCanvas3");
-	var ctx3 = c3.getContext("2d");	
-	ctx3.canvas.width  = w;
-    ctx3.canvas.height  = hh;
-	
-	var imgsp=new Image();
-	imgsp.onload=function(){
-	    ctx3.drawImage(imgsp, 0, 400, w, hh);
-	} 
-	
-	if (currentsec>=25200&&currentsec<=43200)
-	{
-	    imgsp.src="texture/pics/star3.png";	
-	}
-	if (currentsec>=43200&&currentsec<=64800)
-	{
-	    imgsp.src="texture/pics/star3.png";	
-	}
-	
-	if (currentsec>=64800&&currentsec<=86399)
-	{	
-		imgsp.src="texture/pics/star4.png";	
-	}
-	if (currentsec>=0&&currentsec<=25200)
-	{
-	    imgsp.src="texture/pics/star4.png";	
-	}
-
-	var t = setTimeout(drawpic, 60000);
-}
-
-drawsky();
-drawstar();
-//drawwords();
-//drawpic();
-startTime();
 
 
 </script>
