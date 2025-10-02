@@ -534,3 +534,68 @@
 .lnr-pointer-left:before {
 	content: "\e8a9";
 }
+.app-card {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  margin-top: 20px;
+  gap: 20px;
+  max-width: 800px;
+}
+
+.app-icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 24px;
+  flex-shrink: 0;
+}
+
+.app-details {
+  flex: 1;
+}
+
+.app-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.app-desc {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.app-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.app-features li {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.app-store-btn img {
+  height: 40px;
+}
+
+.personal_text_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; /* space between text and list */
+}
+
+.pt_container {
+  flex:2
+}
+
+.bs_container {
+  flex:1
+}
