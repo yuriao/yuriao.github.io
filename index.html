@@ -15,6 +15,19 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
+	<style>
+		.lang-btn {
+			cursor: pointer;
+			padding: 8px 15px;
+			background-color: #f8f9fa;
+			border: 1px solid #dee2e6;
+			border-radius: 4px;
+			transition: all 0.3s ease;
+		}
+		.lang-btn:hover {
+			background-color: #e9ecef;
+		}
+	</style>
 </head>
 
 <body>
@@ -33,7 +46,9 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+							<li class="nav-item">
+								<a class="nav-link" onclick="toggleLanguage()" id="langToggle">中文</a>
+							</li> 
 						</ul>
 					</div> 
 				</div>
@@ -47,26 +62,28 @@
 		<div class="container box_1300">
 			<div class="banner_inner d-flex align-items-center">
 			 <div class="banner_content">
-				 <div class="media">
+				 <div class="media" style="display: flex; justify-content: space-between; gap: 30px;">
 					 <!--div class="d-flex">
 						 <img src="img/personal.png" style="width:240px; height:auto; margin-right:8px; vertical-align:middle;" alt="">
 					 </div-->
-					 <div class="media-body">
+					 <div class="media-body" style="flex: 1; margin: 0;">
 						<div class="personal_text_container">
 							<div class="personal_text">
-							 <h6>Hello Everybody, i am</h6>
-							 <h3>Lujia Chen</h3>
-							 <p>I'm a neuroscience researcher with strong skill in data science and software engineering. My research focus is modeling populational neural dynamics to explain animal behavior in spatial navigation task. I'm also a individual application developer works on cloud-based web application and mobile application</p>
-							 <p></p> 
+							 <h6 data-en="Hello Everybody, i am" data-zh="">Hello Everybody, i am</h6>
+							 <h3 data-en="Lujia Chen" data-zh="陈鲁佳">Lujia Chen</h3>
+							 <p data-en="I'm a neuroscience researcher with strong skill in data science and software engineering. My research focus is modeling populational neural dynamics to explain animal behavior in spatial navigation task. I'm also a individual application developer works on cloud-based web application and mobile application"
+							    data-zh="我是神经科学博士，深耕数据科学和软件工程，主攻方向是研究神经活动与动物在空间导航任务中行为的关系。同时我也是独立开发者，做全栈 Web 和移动端产品。">
+							 I'm a neuroscience researcher with strong skill in data science and software engineering. My research focus is modeling populational neural dynamics to explain animal behavior in spatial navigation task. I'm also a individual application developer works on cloud-based web application and mobile application</p>
+							 <p></p>
 						 </div>
 						</div>
-						 
+
 					</div>
-					 <div class="media-body">
+					 <div class="media-body" style="flex: 1; margin: 0;">
 						<div class="personal_text_container">
 							<div class="personal_text">
 							 <ul class="list basic_info">
-								<li><a href="#"><i class="lnr lnr-star"></i> Cognitive neuroscience, machine learning, Python, MATLAB</a></li>
+								<li><a href="#"><i class="lnr lnr-star"></i> <span data-en="Cognitive neuroscience, machine learning, Python, MATLAB" data-zh="认知神经科学，机器学习，Python，MATLAB">Cognitive neuroscience, machine learning, Python, MATLAB</span></a></li>
 								 <li><a href="#"><i class="lnr lnr-phone-handset"></i> 9497715927</a></li>
 								 <li><a href="#"><i class="lnr lnr-envelope"></i> lujiachen1994@gmail.com</a></li>
 								 <li><a href="https://www.linkedin.com/in/lujiachen-158298a1/" target="_blank"><i class="lnr lnr-link"></i>https://www.linkedin.com/in/lujiachen-158298a1/</a></li>
@@ -74,15 +91,15 @@
 							 </ul>
 						 </div>
 						</div>
-						 
+
 					</div>
 				 	</div>
 					<div class="media">
-						<p>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+						<p>                                                                                                                                                                               </p>
 					</div>
 					<div class="media">
 						<div class="media-body">
-							<h4>Selected research</h4>
+							<h4 data-en="Selected research" data-zh="精选研究">Selected research</h4>
 						</div>
 					</div>
 					<div class="media">
@@ -96,8 +113,10 @@
 								
 								<!-- App Details -->
 								<div class="app-details">
-								<h5 class="app-title">Gradually stabilized grid cell activity during long term spatial learning</h5>
-								<p class="app-desc">Grid cells in the medial entorhinal cortex integrate internal and external cues over days of learning. During virtual navigation, grid fields shift backward before stabilizing and anchoring to landmarks. Slow hippocampal–entorhinal Hebbian plasticity and reduced inhibition consolidate these evolving maps, enabling precise spatial memory through gradual cognitive map formation.</p>
+								<h5 class="app-title" data-en="Gradually stabilized grid cell activity during long term spatial learning" data-zh="内嗅皮质网格细胞活动在长期学习中的逐步稳定">Gradually stabilized grid cell activity during long term spatial learning</h5>
+								<p class="app-desc" data-en="Grid cells in the medial entorhinal cortex integrate internal and external cues over days of learning. During virtual navigation, grid fields shift backward before stabilizing and anchoring to landmarks. Slow hippocampal–entorhinal Hebbian plasticity and reduced inhibition consolidate these evolving maps, enabling precise spatial memory through gradual cognitive map formation." 
+								   data-zh="在一维VR环境中，我们发现网格细胞的活动在数天内逐渐向环境起点移动，并在地表附近趋于稳定。我们提出一个感知细胞-位置细胞-网格细胞的多层次模型去解释这个现象。">
+								Grid cells in the medial entorhinal cortex integrate internal and external cues over days of learning. During virtual navigation, grid fields shift backward before stabilizing and anchoring to landmarks. Slow hippocampal–entorhinal Hebbian plasticity and reduced inhibition consolidate these evolving maps, enabling precise spatial memory through gradual cognitive map formation.</p>
 								</div>
 							</div>
 
@@ -109,8 +128,10 @@
 								
 								<!-- App Details -->
 								<div class="app-details">
-								<h5 class="app-title">Spatial transcriptomic in human muscle tissues</h5>
-								<p class="app-desc">FSHD arises from abnormal DUX4 derepression, requiring single-cell approaches. We apply MERFISH spatial transcriptomics to profile 140 genes in control, mutant, and patient myotubes. Results reveal distinct “FSHD-hi” and “FSHD-lo” states, altered differentiation trajectories, and disrupted gene networks, providing insights into multinucleated transcriptomics and FSHD pathogenesis.</p>
+								<h5 class="app-title" data-en="Spatial transcriptomic in human muscle tissues" data-zh="人类肌肉组织的空间转录组学">Spatial transcriptomic in human muscle tissues</h5>
+								<p class="app-desc" data-en="FSHD arises from abnormal DUX4 derepression, requiring single-cell approaches. We apply MERFISH spatial transcriptomics to profile 140 genes in control, mutant, and patient myotubes. Results reveal distinct "FSHD-hi" and "FSHD-lo" states, altered differentiation trajectories, and disrupted gene networks, providing insights into multinucleated transcriptomics and FSHD pathogenesis." 
+								   data-zh="我们应用MERFISH空间转录组学技术对人面肩肱型肌营养不良症（FSHD）肌肉细胞中的140个基因进行分析。研究结果揭示了病变肌肉细胞特定基因的分化轨迹，为FSHD发病机制提供了新见解。">
+								FSHD arises from abnormal DUX4 derepression, requiring single-cell approaches. We apply MERFISH spatial transcriptomics to profile 140 genes in control, mutant, and patient myotubes. Results reveal distinct "FSHD-hi" and "FSHD-lo" states, altered differentiation trajectories, and disrupted gene networks, providing insights into multinucleated transcriptomics and FSHD pathogenesis.</p>
 								</div>
 							</div>
 
@@ -122,8 +143,10 @@
 								
 								<!-- App Details -->
 								<div class="app-details">
-								<h5 class="app-title">Temporally correlated hippocampal neuron clusters</h5>
-								<p class="app-desc">Using in vivo calcium imaging in mouse hippocampal CA1, we identified excitatory neuron sub-populations with temporally correlated activity forming anatomical clusters. These clusters vary across environments and persist in darkness, revealing a topographic organization that links neural dynamics to spatial structure, shaping hippocampal sequences and episodic memory formation..</p>
+								<h5 class="app-title" data-en="Temporally correlated hippocampal neuron clusters" data-zh="时间相关的海马神经元簇">Temporally correlated hippocampal neuron clusters</h5>
+								<p class="app-desc" data-en="Using in vivo calcium imaging in mouse hippocampal CA1, we identified excitatory neuron sub-populations with temporally correlated activity forming anatomical clusters. These clusters vary across environments and persist in darkness, revealing a topographic organization that links neural dynamics to spatial structure, shaping hippocampal sequences and episodic memory formation." 
+								   data-zh="在小鼠海马区CA1内，我们发现一些神经元亚群同时在时间上和解剖学位置上形成簇状结构。这些结构在空间学习中可以发生改变。">
+								Using in vivo calcium imaging in mouse hippocampal CA1, we identified excitatory neuron sub-populations with temporally correlated activity forming anatomical clusters. These clusters vary across environments and persist in darkness, revealing a topographic organization that links neural dynamics to spatial structure, shaping hippocampal sequences and episodic memory formation.</p>
 								</div>
 							</div>
 
@@ -131,11 +154,11 @@
 					</div>
 					</div>
 					<div class="media">
-						<p>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+						<p>																																																</p>
 					</div>
 					<div class="media">
 						<div class="media-body">
-							<h4>Individual developer Projects</h4>
+							<h4 data-en="Individual developer Projects" data-zh="个人开发项目">Individual developer Projects</h4>
 						</div>
 					</div>
 					<div class="media">
@@ -155,13 +178,15 @@
 
 								<!-- App Details -->
 								<div class="app-details">
-								<h5 class="app-title">Echo in the Crystal Realm</h5>
-								<p class="app-desc">An LLM-powered Chat Game featuring multi-AI discussion and personalized responses.</p>
+								<h5 class="app-title" data-en="Echo in the Crystal Realm" data-zh="Echo in the Crystal Realm">Echo in the Crystal Realm</h5>
+								<p class="app-desc" data-en="An LLM-powered Chat Game featuring multi-AI discussion and personalized responses." 
+								   data-zh="一款由大语言模型驱动的聊天游戏，具有多AI讨论和个性化回复功能。">
+								An LLM-powered Chat Game featuring multi-AI discussion and personalized responses.</p>
 								
 								<ul class="app-features">
-									<li><strong>Mobile:</strong> React Native + Expo</li>
-									<li><strong>Backend:</strong> Express.js, OpenAI API, Firebase</li>
-									<li><strong>Data Science:</strong> NLP, emotion analysis, semantic analysis</li>
+									<li><strong data-en="Mobile:" data-zh="移动端：">Mobile:</strong> React Native + Expo</li>
+									<li><strong data-en="Backend:" data-zh="后端：">Backend:</strong> Express.js, OpenAI API, Firebase</li>
+									<li><strong data-en="Data Science:" data-zh="数据科学：">Data Science:</strong> NLP, <span data-en="emotion analysis, semantic analysis" data-zh="情感分析，语义分析">emotion analysis, semantic analysis</span></li>
 								</ul>
 
 								<!-- App Store Badge -->
@@ -190,23 +215,29 @@
 	</canvas>
 	<!--================Background =================-->
 
-	<!--<div3 class="sansserif" id='banner01' width=250 height=250 style="position: absolute; left:30px; top:25px; z-index: 5; color:rgb(250,250,250);">
-	<img src="texture/home.fw.png" />
-	</div3>
-	<div4 class="sansserif" id='banner02' width=250 height=250 style="position: absolute; left:120px; top:25px; z-index: 5; color:rgb(250,250,250);">
-	<img src="texture/work.fw.png" />
-	</div4>
-	<div5 class="sansserif" id='banner02' width=250 height=250 style="position: absolute; left:210px; top:25px; z-index: 5; color:rgb(250,250,250);">
-	<img src="texture/info.fw.png" />
-	</div5>-->
-	<script type="text/javascript" src="js/bg_drawing.js">
-	//cxt.fillStyle='blue';
-	//cxt.fillRect(0,0,150,75);
+	<script type="text/javascript" src="js/bg_drawing.js"></script>
+	
+	<!-- Language Toggle Script -->
+	<script>
+		let currentLang = 'en'; // Default language
 
-
-
-
-</script>
+		function toggleLanguage() {
+			currentLang = currentLang === 'en' ? 'zh' : 'en';
+			
+			// Update button text
+			document.getElementById('langToggle').textContent = currentLang === 'en' ? '中文' : 'English';
+			
+			// Update all elements with language data
+			const elements = document.querySelectorAll('[data-en][data-zh]');
+			elements.forEach(element => {
+				if (currentLang === 'zh') {
+					element.textContent = element.getAttribute('data-zh');
+				} else {
+					element.textContent = element.getAttribute('data-en');
+				}
+			});
+		}
+	</script>
 
 </body>
 </html>

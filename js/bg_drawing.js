@@ -1,8 +1,10 @@
 function drawsky()
 {
-	let w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+	let w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
-    let hh = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight; 
+    let hh = Math.max(document.body.scrollHeight, document.body.offsetHeight,
+                      document.documentElement.clientHeight, document.documentElement.scrollHeight,
+                      document.documentElement.offsetHeight); 
 
 	let today = new Date();
 	let h = today.getHours();
@@ -105,9 +107,11 @@ function checkTime(i) {
 
 function drawwords()
 {
-	let w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+	let w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
-    let hh = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    let hh = Math.max(document.body.scrollHeight, document.body.offsetHeight,
+                      document.documentElement.clientHeight, document.documentElement.scrollHeight,
+                      document.documentElement.offsetHeight);
 	
 	let c = document.getElementById("word");
 
@@ -121,9 +125,9 @@ function drawwords()
 
 function drawstar()
 {
-		let w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+		let w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
-    let hh = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight; 
+    let hh = 800
 
 	let today = new Date();
 	let h = today.getHours();
@@ -179,9 +183,11 @@ function drawstar()
 
 function drawpic()
 {
-		let w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+		let w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
-    let hh = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight; 
+    let hh = Math.max(document.body.scrollHeight, document.body.offsetHeight,
+                      document.documentElement.clientHeight, document.documentElement.scrollHeight,
+                      document.documentElement.offsetHeight); 
 
 	let today = new Date();
 	let h = today.getHours();
